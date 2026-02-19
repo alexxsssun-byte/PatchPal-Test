@@ -1,6 +1,6 @@
 def greet(name):
     """Return a greeting message."""
-    return f"Goodbye, {name}!"  # BUG: should be Hello
+    return f"Hello, {name}!"
 
 def farewell(name):
     """Return a farewell message."""

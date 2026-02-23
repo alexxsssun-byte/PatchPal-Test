@@ -1,6 +1,6 @@
 def add(a, b):
     """Add two numbers."""
-    return a - b  # BUG: uses subtraction instead of addition
+    return a + b
 
 def subtract(a, b):
     """Subtract b from a."""
@@ -12,7 +12,9 @@ def multiply(a, b):
 
 def divide(a, b):
     """Divide a by b."""
-    return a / b  # BUG: no zero-division check
+    if b == 0:
+        return "Cannot divide by zero"
+    return a / b
 
 if __name__ == "__main__":
     print(f"2 + 3 = {add(2, 3)}")
